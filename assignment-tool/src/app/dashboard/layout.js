@@ -7,17 +7,11 @@ export default function DashboardLayout({ children }) {
             <nav className={styles.topNav}>
                 <div className={styles.logo}>NF</div>
 
-                <div className={styles.navSearch}>
-                    <input type="text" placeholder="Search..."></input>
-                </div>
-
-
-
-                <div className={styles.userButtons}>
-                    <p>Feedback/bug reporting</p>
-                    <Link href="/dashboard/settings">Settings</Link>
-                    <Link href="/">User</Link>
-                </div>
+                <ul className={styles.userButtons}>
+                    <li><Link href="/bugreport">Report Bug</Link></li>
+                    <li><Link href="/dashboard/settings">Settings</Link></li>
+                    <li><Link href="/">User</Link></li>
+                </ul>
             </nav>
 
             <main>
@@ -25,14 +19,20 @@ export default function DashboardLayout({ children }) {
             </main>
 
             <nav className={styles.bottomNav}>
-                <div>
+                <div className={styles.btmButtons}>
                     <Link href="/dashboard/submit">Submit</Link>
                     <Link href="/dashboard/create">Create</Link>
                 </div>
-                <Link href="/dashboard/assignments">Assignments</Link>
-                <Link href="/dashboard">Home</Link>
-                <Link href="/dashboard/classrooms">Classrooms</Link>
-                <p>Notifications</p>
+
+                <div className={styles.btmButtons}>
+                    <Link href="/dashboard/assignments">Assignments</Link>
+                    <Link href="/dashboard">Home</Link>
+                    <Link href="/dashboard/classrooms">Classrooms</Link>
+                </div>
+
+                <div className={styles.btmButtons}>
+                    <Link href="/notifications" >Notifications</Link>
+                </div>
             </nav>
         </section>
     )

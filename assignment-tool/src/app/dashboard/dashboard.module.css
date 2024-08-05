@@ -1,71 +1,77 @@
 .dashboard {
-    background-color: tan;
+    background-color: rgb(32, 32, 32);
     min-height: 100vh;
 }
 
 .topNav {
+    width: calc(100% - 4rem);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: darkgreen;
-    padding: 0 1rem;
-    height: 5vh;
-    color: white;
-    font-weight: bold;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
 }
 
 .topNav a {
     text-decoration: none;
-    color: white;
+    font-size: 1.25rem;
     font-weight: bold;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.45);
+    background-color: orange;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .logo {
-    width: 30%;
-    font-weight: bolder;
-    font-size: 1.5rem;
-}
-
-.navSearch {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.navSearch input {
-    width: 75%;
-    padding: .35rem;
-    margin: 0;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.25);
-    border: 1px solid gray;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .userButtons {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 1rem;
-    width: 30%
+    gap: 1.25rem;
 }
 
 .bottomNav {
     position: sticky;
     bottom: 0;
     width: inherit;
-    height: 5vh;
     padding: 0 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: gray;
-    color: white;
-    font-weight: bold;
 }
 
 .bottomNav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    background-color: orange;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.45);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+}
+
+.btmButtons {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    gap: 1.25rem;
+}
+
+.btmButtons:first-child {
+    justify-content: flex-start;
+}
+
+.btmButtons:last-child {
+    justify-content: flex-end;
 }
