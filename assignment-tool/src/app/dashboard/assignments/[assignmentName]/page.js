@@ -1,7 +1,7 @@
 export default function AssignmentDetails({ params }) {
     return (
-        <div>
-            <h1>{params.assignmentName}</h1>
+        <div className="page">
+            <h1 className="pageTitle">{params.assignmentName}</h1>
             <p>Overview and details for this particular assignment.</p>
 
             <h2>Description</h2>

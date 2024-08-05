@@ -1,11 +1,11 @@
 export default function ClassroomDetails({ params }) {
     return (
-        <div>
-            <h1>{params.classroomName}</h1>
+        <div className="page">
+            <h1 className="pageTitle">{params.classroomName}</h1>
             <p>Overview for this particular class.</p>
 
             <h2>Students and Staff</h2>
-            <div>
+            <div className="section">
                 <ul>
                     <li>Teacher: XYZ</li>
                     <li>Student Aid: ABC</li>
@@ -19,7 +19,7 @@ export default function ClassroomDetails({ params }) {
             </div>
 
             <h2>Assignments</h2>
-            <div>
+            <div className="section">
                 <h3>Active</h3>
                 <ul>
                     <li>Project 1</li>
@@ -34,7 +34,7 @@ export default function ClassroomDetails({ params }) {
             </div>
 
             <h2>Dynamic Options (Student vs Teacher)</h2>
-            <div>
+            <div className="section">
                 <button>Submit Assigment</button>
                 <button>View Grades</button>
                 <button>Ask Question?</button>

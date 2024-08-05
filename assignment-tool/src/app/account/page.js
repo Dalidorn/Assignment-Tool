@@ -1,7 +1,7 @@
 const Account = () => {
   return (
     <div>
-      <h1>Account</h1>
+      <h1 className="pageTitle">Account</h1>
       <p>Login/Signup forms will be here with info on types of accounts/roles</p>
       
 

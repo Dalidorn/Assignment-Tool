@@ -1,19 +1,22 @@
 const Settings = () => {
     return (
-        <div>
-            <h1>Settings</h1>
+        <div className="page">
+            <h1 className="pageTitle">Settings</h1>
 
-            <h3>Legal Info</h3>
-            <ul>
-                <li>Terms of Service</li>
-                <li>Privacy Policy</li>
-                <li>Cookies/Data Preferences</li>
-                <li>Complience Information</li>
-            </ul>
+            <div className="section">
+                <h3>Legal Info</h3>
+                <ul>
+                    <li>Terms of Service</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies/Data Preferences</li>
+                    <li>Complience Information</li>
+                </ul>
+            </div>
 
-            <h2>Account Settings</h2>
-            <button>Edit</button>
-            <div>
+            <div className="section">
+                <h2>Account Settings</h2>
+
+                <button>Edit</button>
                 <p>Profile Picture</p>
                 <p>Display Name: XYZ</p>
                 <p>Email:</p>
@@ -29,31 +32,35 @@ const Settings = () => {
                 <button>Manage Account Recovery Options</button>
             </div>
 
-            <h2>Parental/Tutor/Admin Access</h2>
-            <div>
+            <div className="section">
+                <h2>Parental/Tutor/Admin Access</h2>
+
                 <button>Add/Allow Admin Account</button>
                 <button>Add Tutor to Account</button>
                 <button>Add Parent to Account</button>
                 <button>Manage Access</button>
             </div>
 
-            <h2>Notificaion Preferences</h2>
-            <div>
+            <div className="section">
+                <h2>Notificaion Preferences</h2>
+
                 <button>SMS Notificaions</button>
                 <button>Email Notifications</button>
                 <button>Push Notifications</button>
             </div>
 
-            <h2>3rd Party Integrations</h2>
-            <div>
+            <div className="section">
+                <h2>3rd Party Integrations</h2>
+
                 <p>List of all integrated apps and accounts linked to this app</p>
                 <button>Sync Settings from Linked Apps (where supported)</button>
                 <button>Manage Permissions</button>
                 <button>Manage API Keys/Tokens</button>
             </div>
 
-            <h2>User Interface and Accessibility</h2>
-            <div>
+            <div className="section">
+                <h2>User Interface and Accessibility</h2>
+
                 <p>Appearence</p>
                 <select>
                     <option>Light</option>

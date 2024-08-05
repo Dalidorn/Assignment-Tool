@@ -2,12 +2,12 @@ import Link from 'next/link';
 
 const Classrooms = () => {
     return (
-        <div>
-            <h1>Your Classrooms</h1>
+        <div className="page">
+            <h1 className="pageTitle">Your Classrooms</h1>
 
             <p>Here's all the classrooms attached to this account.</p>
 
-            <div>
+            <div className="section">
                 <card>
                     <h2>Class XYZ</h2>
                     <p>Teacher: Miss ABC</p>

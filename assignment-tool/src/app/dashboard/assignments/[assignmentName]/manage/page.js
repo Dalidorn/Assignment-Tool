@@ -1,7 +1,7 @@
 export default function AssignmentManagement({ params }) {
     return (
         <div>
-            <h1>Assignment Management: {params.assignmentName}</h1>
+            <h1 className="pageTitle">Assignment Management: {params.assignmentName}</h1>
 
             <h2>Options for teachers</h2>
             <div>

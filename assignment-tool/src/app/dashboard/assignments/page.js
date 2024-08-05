@@ -2,13 +2,13 @@ import Link from 'next/link';
 
 const Assignments = () => {
     return (
-        <div>
-            <h1>Assignments</h1>
+        <div className="page">
+            <h1 className="pageTitle">Assignments</h1>
             <p>Here's all the classrooms attached to this account.</p>
 
             <h2>Active</h2>
 
-            <div>
+            <div className="section">
                 <card>
                     <h3>Math Homework</h3>
                     <p>Teacher: Miss ABC</p>
@@ -21,13 +21,13 @@ const Assignments = () => {
                     <p>Status</p>
                     <p>Not Attempted</p>
 
-                    <li><Link href="/dashboard/assignments/sample-assignment">Sample Assignment</Link></li>
+                    <Link href="/dashboard/assignments/sample-assignment">Sample Assignment</Link>
                 </card>
             </div>
 
             <h2>Previous</h2>
 
-            <div>
+            <div className="section">
                 <card>
                     <h3>English Paper</h3>
                     <p>Teacher: Mister ABC</p>
@@ -40,7 +40,7 @@ const Assignments = () => {
                     <p>Status</p>
                     <p>Perfect Score!</p>
 
-                    <li><Link href="/dashboard/assignments/sample-assignment">Sample Assignment</Link></li>
+                    <Link href="/dashboard/assignments/sample-assignment">Sample Assignment</Link>
                 </card>
             </div>
         </div>
